@@ -31,6 +31,7 @@ function Home() {
           {movies.map((movie) => (
             <Movie
               key={movie.id}
+              id={movie.id}
               coverImg={`${movie.thumbnail.path}.${movie.thumbnail.extension}`}
               name={movie.name}
             />

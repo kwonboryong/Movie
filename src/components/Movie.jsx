@@ -1,19 +1,13 @@
+import { Link } from "react-router-dom";
 import s from "./Movie.module.css";
 
-function Movie({ coverImg, name }) {
+function Movie({ id, coverImg, name }) {
   return (
     <div className={s.cardBox}>
-      <img src={coverImg} />
-      <h2>{name}</h2>
-
-      {/* <h3>Series</h3>
-      <ul>
-        {movie.comics.items.map((g) => (
-          <li key={g}>
-            <a href={g.resourceURI}>{g.name}</a>
-          </li>
-        ))}
-      </ul> */}
+      <img src={coverImg} alt={name} />
+      <h2>
+        <Link to={`/movie/${id}`}>{name}</Link>
+      </h2>
     </div>
   );
 }
