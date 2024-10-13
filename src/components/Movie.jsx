@@ -1,4 +1,5 @@
 import { Link } from "react-router-dom";
+import PropTypes from "prop-types";
 import s from "./Movie.module.css";
 
 function Movie({ id, coverImg, name }) {
@@ -11,5 +12,11 @@ function Movie({ id, coverImg, name }) {
     </div>
   );
 }
+
+Movie.propTypes = {
+  id: PropTypes.string.isRequired,
+  coverImg: PropTypes.string.isRequired,
+  name: PropTypes.string.isRequired,
+};
 
 export default Movie;
