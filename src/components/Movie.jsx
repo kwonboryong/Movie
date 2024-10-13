@@ -5,7 +5,7 @@ function Movie({ id, coverImg, name }) {
   return (
     <div className={s.cardBox}>
       <img src={coverImg} alt={name} />
-      <h2>
+      <h2 className={s.title}>
         <Link to={`/movie/${id}`}>{name}</Link>
       </h2>
     </div>

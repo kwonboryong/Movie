@@ -1,4 +1,24 @@
-
 .cardBox {
-  background-color: red;
+  background-color: rgb(227, 227, 227);
+  width: 350px;
+  height: 530px;
+  margin: 10px;
+
+  img {
+    width: 350px;
+    height: 450px;
+  }
+
+  .title {
+    color: black;
+    text-align: center;
+    font-size: 25px;
+    
+    margin-top: 15px;
+  }
+
+  .title a {
+    text-decoration: none;
+    color: inherit;
+  }
 }

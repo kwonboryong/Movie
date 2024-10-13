@@ -1,0 +1,26 @@
+body {
+  background-color: black;
+  user-select: none;
+
+  .loadingText {
+    color: white;
+
+    text-align: center;
+  }
+
+  .container {
+    
+    .title {
+      width: 100%;
+      background-color: red;
+
+      text-align: center;
+      font-size: 28px;
+    }
+
+    .movieContainer {
+      width: 95%;
+    }
+
+  }
+}

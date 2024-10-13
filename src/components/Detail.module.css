@@ -1,0 +1,52 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  .loadingText {
+    color: white;
+
+    text-align: center;
+  }
+
+  .title {
+    width: 100%;
+    text-align: center;
+    font-size: 40px;
+    background-color: red;
+  }
+
+  .content {
+    display: flex;
+    /* flex-direction: column; */
+  }
+
+  .seriesBox {
+    display: flex;
+    flex-direction: column;
+
+    width: 500px;
+
+    .series {
+      color: white;
+      background-color: red;
+
+      font-size: 35px;
+      margin-left: 30px;
+    }
+
+    .seriesTitle {
+      font-size: 19px;
+      margin-top: -10px;
+
+      li {
+        list-style-type: none;
+      }
+
+      a {
+        text-decoration: none;
+        color: white;
+      }
+    }
+  }
+}
