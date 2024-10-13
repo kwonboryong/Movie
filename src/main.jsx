@@ -1,14 +1,14 @@
 import { StrictMode } from "react";
 import { createRoot } from "react-dom/client";
-import HomePage from "@/pages/HomePage";
-import "@/styles/main.css";
+import App from "./App";
+// import "@/styles/main.css";
 
 const container = document.getElementById("react-app");
 
 if (container) {
   createRoot(container).render(
     <StrictMode>
-      <HomePage />
+      <App />
     </StrictMode>
   );
 } else {
